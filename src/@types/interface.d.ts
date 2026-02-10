@@ -1,0 +1,3 @@
+interface IParentComponent {
+  children?: ReactNode;
+}

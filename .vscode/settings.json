@@ -1,0 +1,19 @@
+{
+  "scss.lint.unknownAtRules": "ignore",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"],
+  "tailwindCSS.validate": true,
+  "files.autoSaveDelay": 500,
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
