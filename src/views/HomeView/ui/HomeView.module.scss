@@ -1,0 +1,7 @@
+.home-view {
+  @layer base {
+    flex-grow: 1;
+    padding: 50px 0;
+    background-color: $bg-white-gray-50;
+  }
+}

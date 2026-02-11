@@ -1,0 +1,93 @@
+.footer {
+  @layer base {
+    padding: 52px 0 40px;
+    background-color: $bg-dark;
+  }
+
+  @include lg {
+    padding: 60px 0;
+  }
+
+  @include lg {
+    padding: 88px 0 86px;
+  }
+
+  .content {
+    @layer base {
+      margin-bottom: 48px;
+    }
+
+    @include lg {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 21px;
+    }
+  }
+
+  .list {
+    @layer base {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      margin-top: 32px;
+      gap: 30px;
+      list-style: none;
+    }
+
+    @include lg {
+      flex-direction: row;
+      margin-top: 0;
+      gap: 50px;
+    }
+  }
+
+  .list-item {
+    @layer base {
+      @include inter-font(500);
+
+      color: $gray;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+    }
+
+    @include lg {
+      font-size: 13px;
+      line-height: 19px;
+      text-transform: capitalize;
+    }
+
+    @include xl {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .copyright {
+    @layer base {
+      @include inter-font(500);
+
+      width: 100%;
+      margin-top: 26px;
+      color: $gray;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+    }
+
+    @include lg {
+      margin-top: 40px;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: left;
+    }
+
+    @include lg {
+      margin-top: 56px;
+      font-size: 17px;
+      line-height: 25px;
+    }
+  }
+}

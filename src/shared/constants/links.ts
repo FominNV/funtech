@@ -4,3 +4,10 @@ export const NAVIGATE_LINKS: string[] = [
   "Sell",
   "Stats",
 ];
+
+export const ABOUT_LINKS: string[] = [
+  "Privacy Policy",
+  "Term & Conditions",
+  "About Us",
+  "Contact",
+];

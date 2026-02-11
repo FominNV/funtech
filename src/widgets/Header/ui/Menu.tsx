@@ -1,6 +1,6 @@
 import { FC, JSX } from "react";
 import clsx from "clsx";
-import { MainContainer } from "@/shared";
+import { Divider, MainContainer } from "@/shared";
 import { NAVIGATE_LINKS } from "@/shared/constants";
 import styles from "./Menu.module.scss";
 
@@ -19,7 +19,7 @@ export const Menu: FC<IMenuProps> = ({ isOpen }) => {
     <div className={clsx(styles.menu, { [styles["menu--opened"]]: isOpen })}>
       <MainContainer>
         <div>
-          <div className={styles.divider} />
+          <Divider />
           <ul className={styles.list}>{renderNavigateLinks}</ul>
         </div>
       </MainContainer>
