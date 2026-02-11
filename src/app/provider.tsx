@@ -1,5 +1,5 @@
 import { FC } from "react";
-import "../shared/styles/modules.scss";
+import "@styles/normalize.scss";
 
 export const MainProvider: FC<IParentComponent> = ({ children }) => (
   <>{children}</>

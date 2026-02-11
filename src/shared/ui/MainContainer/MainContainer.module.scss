@@ -1,0 +1,19 @@
+.main-container {
+  @layer base {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
+
+  @include lg {
+    padding: 0 67px;
+  }
+
+  @include xl {
+    padding: 0 97px;
+  }
+
+  @include xxl {
+    padding: 0 337px;
+  }
+}

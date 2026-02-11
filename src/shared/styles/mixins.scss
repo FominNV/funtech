@@ -1,0 +1,33 @@
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  letter-spacing: inherit;
+  line-height: inherit;
+  outline: none;
+  text-align: inherit;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  word-spacing: inherit;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 2px solid currentcolor;
+    outline-offset: 2px;
+  }
+}

@@ -18,7 +18,7 @@ const config = {
     "at-rule-no-unknown": [
       true,
       {
-        ignoreAtRules: ["use", "include"],
+        ignoreAtRules: ["use", "include", "forward", "mixin"],
       },
     ],
     "scss/at-rule-no-unknown": true,
@@ -44,6 +44,8 @@ const config = {
         hasBlock: true,
       },
     ],
+    "media-query-no-invalid": null,
+    "nesting-selector-no-missing-scoping-root": null,
   },
 };
 

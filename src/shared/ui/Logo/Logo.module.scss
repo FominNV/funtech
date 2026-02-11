@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+  align-items: center;
+  color: $black;
+  gap: 7px;
+
+  &--theme-white {
+    color: $white;
+  }
+
+  &--only-mobile {
+    .title {
+      @include lg {
+        display: none;
+      }
+    }
+  }
+
+  .title {
+    @include poppins-font(600);
+
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
