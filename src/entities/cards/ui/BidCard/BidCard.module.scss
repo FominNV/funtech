@@ -1,0 +1,116 @@
+.card-bid {
+  @layer base {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: $white;
+  }
+
+  @include xl {
+    padding: 14px;
+    border-radius: 24px;
+  }
+
+  .image-wrap {
+    @layer base {
+      position: relative;
+      overflow: hidden;
+      width: 190px;
+      height: 190px;
+      border-radius: 24px;
+    }
+
+    @include xl {
+      width: 253px;
+      height: 253px;
+    }
+  }
+
+  .timer {
+    @layer base {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    @include xl {
+      top: 14px;
+      right: 11px;
+    }
+  }
+
+  .title {
+    @layer base {
+      @include poppins-font(600);
+
+      overflow: hidden;
+      max-width: 190px;
+      margin-top: 14px;
+      color: $font-dark;
+      font-size: 16px;
+      line-height: 18px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    @include xl {
+      max-width: 250px;
+      margin-top: 20px;
+      font-size: 22px;
+      line-height: 24px;
+    }
+  }
+
+  .panel {
+    @layer base {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+    }
+
+    @include xl {
+      margin-top: 20px;
+    }
+  }
+
+  .panel-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .subtitle {
+    @layer base {
+      @include poppins-font;
+
+      color: $font-metal;
+      font-size: 11px;
+      line-height: 11px;
+    }
+
+    @include xl {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  .grade {
+    @layer base {
+      @include poppins-font(500);
+
+      display: flex;
+      align-items: center;
+      color: $font-dark;
+      font-size: 12px;
+      gap: 3px;
+      line-height: 14px;
+    }
+
+    @include xl {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.button {
+  @layer base {
+    @include button-reset;
+    @include poppins-font(600);
+
+    padding: 11px 18px;
+    border-radius: 9px;
+    background-color: $bg-dark;
+    transition: all 0.25s;
+
+    &:hover {
+      background-color: $bg-dark-70;
+    }
+  }
+
+  @include xl {
+    border-radius: 12px;
+  }
+
+  .text {
+    @layer base {
+      color: $white;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    @include xl {
+      font-size: 14px;
+    }
+  }
+}

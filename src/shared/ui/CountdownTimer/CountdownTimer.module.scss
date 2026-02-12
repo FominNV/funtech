@@ -1,0 +1,23 @@
+.countdown-timer {
+  @layer base {
+    @include poppins-font(500);
+
+    display: flex;
+    width: fit-content;
+    min-width: 126px;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 7px 10px;
+    border-color: #1c1d2014;
+    border-radius: 10px;
+    background-color: #1c1d2059;
+    color: $white;
+    font-size: 11px;
+    line-height: 1;
+  }
+
+  @include xl {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}

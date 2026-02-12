@@ -4,8 +4,20 @@ $gray: #999;
 
 $bg-white-gray-50: #f1f1f1;
 $bg-dark: #141416;
-
+$bg-dark-70: #333;
+$bg-gray-30: #fcfcfc;
 $bg-gray-50: #f9f9f9;
 $bg-gray-70: #cbcbcb;
 
-$font-gray-50: #606060;
+$font-dark: #141416;
+$font-metal: #94a3b8;
+$font-gray-45: #606060;
+$font-gray-50: #c5c5c5;
+
+$header-height-mobile: 106px;
+$header-height-desktop: 145px;
+
+$scrollbar-width: 6px;
+$scrollbar-height: 6px;
+
+$full-screen: calc(100vw - $scrollbar-width);

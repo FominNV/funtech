@@ -1,0 +1,26 @@
+@import "./normalize.scss";
+
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+  height: $scrollbar-height;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+/* Ползунок при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Уголок между полосами */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
+}

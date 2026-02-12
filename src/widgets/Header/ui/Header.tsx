@@ -34,32 +34,38 @@ export const Header: FC = () => {
 
     gsap.to(linksNode, {
       y: 0,
-      duration: 1,
+      duration: 0.7,
       delay: 0.5,
     });
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflowY = showMenu ? "hidden" : "auto";
+  }, [showMenu]);
+
   return (
     <>
-      <header
-        className={clsx(styles.header, {
-          [styles["header--fixed"]]: isScrolledY,
-        })}
-      >
-        <MainContainer>
-          <div className={styles.content}>
-            <nav className={styles.links}>
-              <Logo />
-              {!isMobile && (
-                <ul className={styles.list}>{renderNavigateLinks}</ul>
+      <div className={styles["header-wrap"]}>
+        <header
+          className={clsx(styles.header, {
+            [styles["header--fixed"]]: isScrolledY,
+          })}
+        >
+          <MainContainer>
+            <div className={styles.content}>
+              <nav className={styles.links}>
+                <Logo />
+                {!isMobile && (
+                  <ul className={styles.list}>{renderNavigateLinks}</ul>
+                )}
+              </nav>
+              {isMobile && (
+                <MenuButton isOpen={showMenu} onClick={handleToggleMenu} />
               )}
-            </nav>
-            {isMobile && (
-              <MenuButton isOpen={showMenu} onClick={handleToggleMenu} />
-            )}
-          </div>
-        </MainContainer>
-      </header>
+            </div>
+          </MainContainer>
+        </header>
+      </div>
       {isMobile && <Menu isOpen={showMenu} />}
     </>
   );

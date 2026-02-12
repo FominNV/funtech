@@ -1,7 +1,46 @@
 .home-view {
   @layer base {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     padding: 50px 0;
     background-color: $bg-white-gray-50;
+  }
+
+  @include xl {
+    padding: 70px 0;
+  }
+
+  .title {
+    @layer base {
+      @include poppins-font(600);
+
+      width: 100%;
+      margin: 0;
+      color: $font-gray-50;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    @include lg {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    @include xl {
+      font-size: 46px;
+      line-height: 48px;
+    }
+  }
+
+  .slider-wrap {
+    @layer base {
+      margin-top: 50px;
+    }
+
+    @include xl {
+      margin-top: 70px;
+    }
   }
 }

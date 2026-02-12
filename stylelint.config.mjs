@@ -46,6 +46,7 @@ const config = {
     ],
     "media-query-no-invalid": null,
     "nesting-selector-no-missing-scoping-root": null,
+    "import-notation": null,
   },
 };
 

@@ -1,0 +1,62 @@
+.swiper-slider {
+  @layer base {
+    position: relative;
+    overflow: hidden;
+    width: $full-screen;
+    box-sizing: border-box;
+    padding: 0 40px;
+    opacity: 0;
+  }
+
+  @include xl {
+    padding: 0 140px;
+  }
+
+  .slider {
+    overflow: visible;
+  }
+
+  .slide {
+    width: auto !important;
+  }
+
+  .navigate-buttons {
+    @layer base {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      border-radius: 13px;
+      margin: 0 auto;
+      margin-top: 60px;
+      background-color: $bg-gray-30;
+    }
+
+    @include xl {
+      margin-top: 70px;
+    }
+  }
+
+  .prev-button,
+  .next-button {
+    @layer base {
+      @include button-reset;
+
+      display: flex;
+      height: 48px;
+      flex: 0 0 61px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include xl {
+      height: 65px;
+      flex: 0 0 82px;
+    }
+  }
+
+  .divider {
+    width: 2px;
+    height: 24px;
+    background-color: $bg-gray-70;
+  }
+}

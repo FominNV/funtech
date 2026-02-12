@@ -1,21 +1,39 @@
-.header {
+.header-wrap {
   @layer base {
     position: relative;
     z-index: 10;
+    width: 100%;
+    height: $header-height-mobile;
+  }
+
+  @include xl {
+    height: $header-height-desktop;
+  }
+}
+
+.header {
+  @layer base {
+    z-index: 10;
     display: flex;
-    height: 106px;
+    width: 100%;
+    height: $header-height-mobile;
     align-items: center;
     justify-content: center;
     background-color: $bg-gray-50;
-    transition: all 0.25s;
+    transition: all 0.3s;
+  }
 
-    &--fixed {
-      position: fixed;
-      top: 0;
-      left: 0;
-      border-radius: 0 0 20px 20px;
-      background: $white;
-    }
+  @include xl {
+    height: $header-height-desktop;
+  }
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 88px;
+    border-radius: 0 0 20px 20px;
+    background: $white;
   }
 
   .content {
@@ -29,7 +47,7 @@
       display: flex;
       align-items: center;
       gap: 40px;
-      transform: translateY(-300px);
+      transform: translateY(-200px);
     }
 
     @include xl {
@@ -61,7 +79,7 @@
     @layer base {
       @include inter-font(500);
 
-      color: $font-gray-50;
+      color: $font-gray-45;
       cursor: pointer;
       font-size: 14px;
       line-height: 16px;

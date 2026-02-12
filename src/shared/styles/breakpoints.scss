@@ -1,15 +1,13 @@
 @layer base, xs, lg, xl, xxl;
 
-$breakpoints: (
-  xs: 375px,
-  lg: 1024px,
-  xl: 1440px,
-  xxl: 1920px,
-);
+$xs: 375px;
+$lg: 1024px;
+$xl: 1440px;
+$xxl: 1920px;
 
 @mixin xs {
   @layer xs {
-    @media only screen and (min-width: map_get($breakpoints, xs)) {
+    @media only screen and (min-width: $xs) {
       @content;
     }
   }
@@ -17,7 +15,7 @@ $breakpoints: (
 
 @mixin lg {
   @layer lg {
-    @media only screen and (min-width: map_get($breakpoints, lg)) {
+    @media only screen and (min-width: $lg) {
       @content;
     }
   }
@@ -25,7 +23,7 @@ $breakpoints: (
 
 @mixin xl {
   @layer xl {
-    @media only screen and (min-width: map_get($breakpoints, xl)) {
+    @media only screen and (min-width: $xl) {
       @content;
     }
   }
@@ -33,7 +31,7 @@ $breakpoints: (
 
 @mixin xxl {
   @layer xxl {
-    @media only screen and (min-width: map_get($breakpoints, xxl)) {
+    @media only screen and (min-width: $xxl) {
       @content;
     }
   }
